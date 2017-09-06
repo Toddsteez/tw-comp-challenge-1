@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-weight: 700;
+  }
+
+  h1,
+  p {
+    color: white;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  
+  .button-text {
+    display: inline;
+    height: 12px;
+    margin-right: 3px;
+  }
+  
+  .head,
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 33.3333vh;
+    justify-content: center;
+  }
+  
+  .box {
+    align-items: center;
+    width: 33.3333%;
+  }
+  
+  .name {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+  .head {
+    background: #1E1F2B;
+    padding: 0 30px 0 30px;
+    width: 66.6666%;
+  }
+  
+  .head p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .head-button {
+    background: none;
+    border: solid 1px white;
+    color: white;
+    display: inline;
+    margin-right: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 130px;
+  }
+  
+  .body-icon {
+    display: block;
+    width: 25%;
+  }
+  
+  .box-text {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .banner {
+    align-items: center;
+    background-image: url('Beluga-Seal.jpg');
+    background-position: 37%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+  .button {
+    background-color: lightgray;
+    border-radius: 50%;
+    border: none;
+    height: 38px;
+    padding: 0;
+    margin: 20px;
+    opacity: .7;
+    width: 38px;
+  }
+  
+  .banner img {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navigation {
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .navigation article {
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    height: 14px;
+    margin: .5px;
+    opacity: .7;
+    width: 14px;
+  }
+  
+  .navigation .nav1 {
+    background-color: white;
+  }
+  
+  #threats {background: #01596E;}
+  #migration {background: #94B2BB;}
+  #communication {background: #406C7D;}
+  #behavior {background: #78929A;}
+  #habitat {background: #033B52;}
+  #reproduction {background: #B5C1C6;}
+  #diet {background: #43404E;}
+
+  @media screen and (max-width: 900px) {
+    .banner {
+      background-image: url('crop-belugaseal.jpeg');
+      height: 50vh;
+      order: -1;
+      width: 100%;
+    }
+  
+    body {
+      flex-direction: column;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 570px) {
+    .head {
+      font-size: 14px;
+      letter-spacing: 1px;
+      width: 100%;
+    }
+    .box {
+      height: 25vh;
+      width: 50%;
+    }
+  
+    #diet {
+      width: 100%
+    }
+    #diet .body-icon{
+      width: 12.5%;
+    }
+  }
+  
+  @media screen and (max-height: 350px) {
+    .box,
+    .head {
+      font-size: 14px;
+      height: 165px;
+      letter-spacing: 1px;
+    }
+    /* .head-button { */
+      /* width: 50%;
+      height: 75% */
+      /* display: inline; */
+    }
+  }
